@@ -1,5 +1,6 @@
 ---
 import LinkGaranta from '../components/LinkGaranta.astro';
+import Shape from '../components/Shape.astro';
 import Layout from '../layouts/Layout.astro';
 
 ---
@@ -8,16 +9,7 @@ import Layout from '../layouts/Layout.astro';
 	<LinkGaranta />
 	<div class=" w-[85%]  justify-between  flex mx-auto mt-32 relative">
 
-		<div class=" absolute -top-[500px] left-[-100px] blur-3xl">
-			<svg width="692" height="493" viewBox="0 0 692 493" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M17.9206 75.1122C113.854 -7.25766 489.961 -44.6135 600.532 84.1646C711.103 212.943 722.97 384.112 627.036 466.482C531.103 548.852 466.34 423.101 355.769 294.322C245.198 165.544 -78.0125 157.482 17.9206 75.1122Z" fill="#FFBF00" fill-opacity="0.29"/>
-				</svg>
-				
-		</div>
-
-
-
-		<div >
+		<div class=" mt-12" >
 			<img src="/logo.png"  class=" w-60" alt="">
 	
 			<h1 class=" xl:text-5xl text-4xl mt-8 tracking-tight  max-w-[600px]">
@@ -45,7 +37,7 @@ import Layout from '../layouts/Layout.astro';
 	</div>
 
 	<div class=" h-24">
-		<img src="/iphone1.png" class=" w-[500px] -translate-y-28" alt="">
+		<img src="/iphone1.png" class=" w-[500px] -translate-y-24" alt="">
 	</div>
 
 	<section class=" flex w-full justify-between  z-20 relative ">
@@ -67,7 +59,7 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<section class=" flex  mt-32 px-24 gap-24">
+	<section class=" flex justify-around  mt-32 px-24 gap-24">
 		
 		<div class="  w-[429px]" >
 			<img src="/iphone2.png" alt="" class=" w-[90%]">
@@ -79,7 +71,7 @@ import Layout from '../layouts/Layout.astro';
 			</p>
 		</div>
 
-		<div class=" flex-1 h-[450px] rounded-[50px] bg-[#181200] flex justify-center items-center ">
+		<div class=" flex-1 h-[450px] max-w-[800px] rounded-[50px] bg-[#181200] flex justify-center items-center aspect-video">
 			Video
 		</div>
 

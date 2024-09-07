@@ -1,0 +1,12 @@
+<svg width="1065" height="931" viewBox="0 0 1065 931" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_13_36)">
+<path d="M312.715 350.436C377.017 295.225 629.117 270.186 703.231 356.504C777.345 442.822 785.299 557.555 720.997 612.766C656.694 667.977 613.284 583.688 539.17 497.37C465.055 411.052 248.412 405.648 312.715 350.436Z" fill="#FFBF00" fill-opacity="0.39"/>
+</g>
+<defs>
+<filter id="filter0_f_13_36" x="0.942047" y="0.161133" width="1063.53" height="930.254" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_13_36"/>
+</filter>
+</defs>
+</svg>
