@@ -8,45 +8,46 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Metodo Iphone Pro">
 	<LinkGaranta />
-	<div class=" w-[85%]  justify-between  flex mx-auto mt-32 relative">
+	<div class=" w-[85%]  justify-between flex-col-reverse sm:flex-row  flex mx-auto mt-32 relative">
 
-		<div class=" mt-12 relative" >
-			<img src="/logo.png"  class=" w-60" alt="">
-	
-			<h1 class=" xl:text-5xl text-4xl mt-8 tracking-tight  max-w-[600px]">
-				Você sabia que o Brasil tem o 
+		<div class=" mt-12 relative  sm:translate-y-0 -translate-y-16" >
+			<img src="/logo.png"  class=" w-40 mx-auto sm:mx-0 sm:w-60" alt="">
+
+			<h1 class=" xl:text-5xl sm:text-left text-center  leading-9 text-4xl mt-4 sm:mt-8 tracking-tight  max-w-[600px]">
+				Você sabia que o Brasil tem o
 				segundo <strong class=" text-primary  relative  "> <img class=" absolute w-full  top-[60%] -translate-y-1/2 left-1/2 -translate-x-1/2 " src="/blur-tittle.png" alt=""> iPhone mais </strong>
-				caro do mundo? 
+				caro do mundo?
 			</h1>
-	
-			<p 
-				class=" text-white/50 text-xl leading-5 mt-5 tracking-tighter  "
+
+			<p
+				class=" text-white/50 text-xl leading-5 mt-5 tracking-tighter sm:text-left text-center  "
 			>
-				Descubra como importar iPhones sem pagar preços <br> absurdos e <strong class=" text-white">economize agora!</strong>
+				Descubra como importar iPhones sem pagar preços <br class=" sm:block hidden"> absurdos e  <br class=" sm:hidden block "> <strong class=" text-white">economize agora!</strong>
 			</p>
-	
+
 			<img src="/arrow1.png"  class=" w-12 absolute bottom-5 -left-16" alt="">
 
 		</div>
 
 		<div class="   relative  " >
-			<div  class=" w-56 absolute left-1/2 -translate-x-1/2 -top-32">
+			<div  class=" w-32 sm:w-56   absolute left-1/2 -translate-x-1/2 -top-32">
 				<img src="bookFloat.png" class=" w-56  float" alt="">
 
 			</div>
-			<img src="/anon 1.png" class=" w-[600px] mx-auto translate-y-20" alt="">
+			<img src="/anon 1.png" class=" w-[600px] mx-auto sm:translate-y-20" alt="">
 		</div>
 
 	</div>
 
-	<div class=" h-24">
+	 <div class=" sm:block hidden h-24 mt-10">
 		<img src="/iphone1.png" class=" w-[500px] -translate-y-24 opacity-40" alt="">
 	</div>
 
-	<section class=" flex w-full justify-between  z-20 relative overflow-hidden py-5 ">
-		<div class=" max-w-[850px]  pl-24  pr-24 py-16 rounded-r-[50px] bg-[#181200]  relative">
+
+	<section class=" flex w-full justify-between  z-20 relative sm:overflow-hidden py-5 ">
+		<div class=" max-w-[850px]  px-10 sm:px-24  py-16 rounded-r-[50px] bg-[#181200]  relative">
 			<h2 class=" text-2xl font-bold">
-				Chega de pagar caro em iPhones! 
+				Chega de pagar caro em iPhones!
 			</h2>
 			<p class="  text-xl leading-6  mt-4 text-white/80">
 				Com o Método iPhone Pro, você terá acesso exclusivo ao segredo que os grandes importadores não querem que você saiba.  <br>
@@ -57,13 +58,13 @@ import Layout from '../layouts/Layout.astro';
 				<LinkGaranta />
 			</div>
 		</div>
-		<div class="   flex-1  justify-center items-center flex relative ">
+		<div class=" flex   flex-1  justify-center items-center  sm:relative  absolute  sm:scale-100 scale-[.6] left-1/2 sm:left-0 sm:translate-x-0 sm:top-0 -translate-x-1/2 -top-16 ">
 
 			<div class=" relative">
 				<img src="/arrow2.png" alt="" class="absolute -top-20 -right-32 size-32 object-contain">
 				 <img src="/arrow3.png" alt="" class="absolute -bottom-44 -left-72  size-72 object-contain">
-				<img src="/arrow4.png" alt="" class="absolute -bottom-20 -right-36 size-28 object-contain"> 
-	
+				<img src="/arrow4.png" alt="" class="absolute -bottom-20 -right-36 size-28 object-contain">
+
 				<img src="/alliphones.png" class=" w-72 " alt="">
 			</div>
 
@@ -71,28 +72,32 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<section class=" flex justify-around  mt-32 px-24 gap-24">
-		
-		<div class="  w-[429px]" >
+	<section class=" flex flex-col-reverse sm:flex-row justify-around mt-10  sm:mt-32 sm:px-24 px-10 gap-14 sm:gap-24">
+
+		<div class="  sm:w-[429px]" >
 			<img src="/iphone2.png" alt="" class=" w-[90%]">
 			<p class=" text-[18px] leading-6 mt-5">
-				Neste vídeo, eu conto a história de como entrei nesse mercado e por que decidi compartilhar esse conhecimento com você. 
+				Neste vídeo, eu conto a história de como entrei nesse mercado e por que decidi compartilhar esse conhecimento com você.
 				<br> <br>
 				<strong class=" text-primary">Não mostro meu rosto</strong> <span class=" text-white/50">por uma razão simples: grandes players do mercado não querem que você tenha acesso a essas informações. <br> Anos de experiência me permitiram chegar até aqui, e agora vou dividir tudo com você.</span>
 
 			</p>
 		</div>
 
-		<div class=" flex-1 h-[450px] max-w-[800px] rounded-[50px] bg-[#181200] flex justify-center items-center aspect-video">
+		<div class="flex flex-1 h-[450px] max-w-[800px] rounded-[50px] bg-[#181200]  justify-center items-center aspect-video">
 			Video
 		</div>
 
 	</section>
-	
-	<h3 class=" mx-auto text-2xl my-24 text-center w-full">
-		Aprenda a importar iPhones sem intermediários <br>
+
+
+	<h3 class=" mx-auto text-2xl sm:my-24 my-12 text-center w-full px10">
+		Aprenda a importar iPhones sem intermediários <br class=" sm:block hidden">
 		e <strong class=" text-primary">economize milhares</strong> de reais!
 	</h3>
+
+
+
 
 	<section class=" bg-[#535353] bg-opacity-[29%] w-full pt-5 pb-12 relative" >
 		<h4 class=" mx-auto text-center  text-2xl my-6">
@@ -127,7 +132,7 @@ import Layout from '../layouts/Layout.astro';
 			<LinkGaranta />
 		</div>
 
-		
+
 		<img src="/shape8.svg" class=" size-[700px] pointer-events-none absolute top-1/2 -left-44 -translate-y-1/2 z-30" alt="">
 		<img src="/shape9.svg" class=" size-[700px] pointer-events-none absolute -bottom-96 right-0 z-30" alt="">
 
@@ -135,99 +140,114 @@ import Layout from '../layouts/Layout.astro';
 	</section>
 
 
+
 	<section class=" mt-20">
 		<h4 class=" text-center text-2xl">Provas Sociais</h4>
 		<p class=" text-center text-xl mt-2 leading-5 " >
-			Aqui estão os depoimentos de pessoas que seguiram o  <br>
-			Método iPhone Pro e conseguiram economizar <br>
+			Aqui estão os depoimentos de pessoas que seguiram o  <br class=" sm:block hidden">
+			Método iPhone Pro e conseguiram economizar <br class=" sm:block hidden">
 			e aumentar seus lucros.
 		</p>
 
-		<!-- grid 2x2 con rectangulos	 -->
-		<div class=" grid w-fit mx-auto mt-10 grid-cols-2 gap-4  justify-center items-center place-items-center place-content-center place-self-center justify-items-center ">
-			<div class=" w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
+		<div class=" flex flex-col px-4 sm:px-0 sm:grid sm:w-fit mx-auto mt-10 grid-cols-2 gap-4  justify-center items-center place-items-center place-content-center place-self-center justify-items-center ">
+			<div class=" w-full sm:w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
 			</div>
-			<div class=" w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
+			<div class=" w-full sm:w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
 			</div>
-			<div class=" w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
+			<div class=" w-full sm:w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
 			</div>
-			<div class=" w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
+			<div class=" w-full sm:w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
 			</div>
 		</div>
-		
+
 	</section>
 
-	<section class=" flex justify-center gap-24 mt-24">
+
+
+	<section class=" flex sm:flex-row flex-col justify-center gap-5 sm:gap-24 mt-24 sm:px-0 px-10">
 		<div>
 			<h4 id="problema"  class=" relative font-bold text-center text-2xl">
 				Problema Atual
 			</h4>
-			<p class="  mt-4 w-[350px] leading-5 tracking-tighter">
-				Você sabia que o Brasil tem o segundo <strong class=" text-red-600">iPhone mais caro do mundo? </strong> <br> 
+			<p class="  mt-4 sm:w-[350px] leading-5 tracking-tighter">
+				Você sabia que o Brasil tem o segundo <strong class=" text-red-600">iPhone mais caro do mundo? </strong> <br>
 				Isso acontece por causa dos impostos altíssimos e da quantidade absurda de intermediários. As lojas oficiais lucram com preços exorbitantes, mas agora você pode aprender a importar direto da fonte e economizar uma quantia considerável.
 			</p>
 		</div>
-		<div class=" relative -translate-x-6">
-			<svg  class=" w-auto h-[130%] absolute top-1/2 -translate-y-1/2" viewBox="0 0 67 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<div class=" relative sm:-translate-x-6 ">
+			<svg  class=" w-auto h-[130%] hidden sm:block absolute top-1/2 -translate-y-1/2" viewBox="0 0 67 396" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M34.0001 0.566243L19.5663 15L34.0001 29.4338L48.4338 15L34.0001 0.566243ZM34 396L48.4338 371L19.5663 371L34 396ZM31.5001 15L31.5 373.5L36.5 373.5L36.5001 15L31.5001 15Z" fill="#FFC20B"/>
 				<rect y="142" width="67" height="67" fill="#FFC20B"/>
 				<path d="M34.0078 163.509L24.7463 190H16.4679L7.20635 163.509H14.9674L20.4691 182.463H20.7451L26.2296 163.509H34.0078ZM59.3234 171.063L52.5971 171.477C52.4821 170.902 52.2349 170.385 51.8555 169.925C51.4761 169.453 50.9759 169.08 50.355 168.804C49.7456 168.516 49.0155 168.373 48.1647 168.373C47.0264 168.373 46.0663 168.614 45.2845 169.097C44.5026 169.568 44.1117 170.201 44.1117 170.994C44.1117 171.626 44.3647 172.161 44.8706 172.598C45.3765 173.035 46.2446 173.386 47.4748 173.65L52.2694 174.616C54.8449 175.145 56.7651 175.996 58.0299 177.168C59.2946 178.341 59.927 179.882 59.927 181.791C59.927 183.527 59.4153 185.05 58.392 186.361C57.3802 187.672 55.989 188.695 54.2183 189.431C52.4591 190.155 50.4298 190.517 48.1302 190.517C44.6234 190.517 41.8294 189.787 39.7483 188.327C37.6787 186.855 36.4656 184.855 36.1092 182.325L43.3356 181.946C43.5541 183.015 44.083 183.831 44.9223 184.395C45.7616 184.947 46.8367 185.223 48.1474 185.223C49.4352 185.223 50.47 184.975 51.2519 184.481C52.0452 183.975 52.4476 183.325 52.4591 182.532C52.4476 181.865 52.1659 181.319 51.614 180.894C51.0622 180.457 50.2113 180.123 49.0615 179.893L44.4739 178.979C41.8869 178.462 39.961 177.565 38.6962 176.289C37.4429 175.013 36.8163 173.386 36.8163 171.408C36.8163 169.706 37.2762 168.24 38.1961 167.01C39.1274 165.78 40.4324 164.831 42.1111 164.164C43.8013 163.497 45.7789 163.164 48.044 163.164C51.3898 163.164 54.0228 163.871 55.943 165.285C57.8746 166.7 59.0014 168.625 59.3234 171.063Z" fill="black"/>
 			</svg>
+
+<div class=" flex justify-center items-center sm:hidden">
+	<img src="/arrow1.png" class=" h-20 scale-150  -translate-y-6" alt="">
+	<div class=" mx-auto text-center size-12  bg-primary flex justify-center items-center rounded-xl text-black font-bold">
+		<span >
+			VS
+		</span>
+	</div>
+	<img src="/arrow1.png" class=" h-20 scale-150 rotate-180 translate-y-6" alt="">
+
+</div>
 		</div>
-		<div class="  text-right">
+		<div class="  sm:text-right">
 			<h4  id="solucao" class=" z-10 relative font-bold text-center text-2xl  ">
 				Solução
 			</h4>
-			<p class="   mt-4 w-[330px] leading-5 tracking-tighter ">
-				O Método  <strong class=" text-primary">iPhone Pro te ensina  </strong>  como evitar os intermediários, lidar diretamente com os melhores fornecedores do mercado e importar iPhones com segurança e simplicidade. Você vai <strong class=" text-primary">economizar tempo </strong> , esforço, dinheiro e, principalmente, vai saber exatamente como fazer isso do jeito certo.			
+			<p class="   mt-4  sm:w-[330px] leading-5 tracking-tighter ">
+				O Método  <strong class=" text-primary">iPhone Pro te ensina  </strong>  como evitar os intermediários, lidar diretamente com os melhores fornecedores do mercado e importar iPhones com segurança e simplicidade. Você vai <strong class=" text-primary">economizar tempo </strong> , esforço, dinheiro e, principalmente, vai saber exatamente como fazer isso do jeito certo.
 			</p>
 		</div>
 	</section>
 
 
-	<section class=" w-full flex  justify-around mt-64 relative">
 
-		<img src="/3arrows.png" alt="" class=" -translate-y-12">
-		<img src="/2iphones.png" alt="" class="  w-40   absolute top-[30%] -translate-y-1/2 left-0">
+	<section class=" w-full flex  justify-around sm:mt-64 mt-24 relative">
+
+		<img src="/3arrows.png" alt="" class=" sm:block hidden -translate-y-12">
+		<img src="/2iphones.png" alt="" class=" sm:block hidden  w-40   absolute top-[30%] -translate-y-1/2 left-0">
 
 		<div class=" bg-gradient-to-t from-transparent justify-center to-[#181200] rounded-[50px] h-min px-3">
 			<div class=" h-32 flex items-end ">
-				<img src="/book.png" class=" w-[28rem] translate-y-[5.5rem]" alt="">
+				<img src="/book.png" class=" w-80 mx-auto sm:w-[28rem] translate-y-[5.5rem]" alt="">
 			</div>
 			<LinkGaranta />
 			<Clock />
 			<p class=" mt-8 text-primary font-bold text-center text-2xl">Oferta limitada</p>
 		</div>
 
-		<img src="/3arrows-2.png" class=" -translate-y-36" alt="">
-		<img src="/2iphones-2.png" alt="" class="top-[30%]  w-40 absolute -translate-y-1/2  right-0">
+		<img src="/3arrows-2.png" class=" sm:block hidden -translate-y-36" alt="">
+		<img src="/2iphones-2.png" alt="" class="top-[30%]  sm:block hidden w-40 absolute -translate-y-1/2  right-0">
 
 	</section>
 
-	<section>
+
+	<section class=" mt-20 sm:mt-0">
 		<h5 class=" text-3xl underline text-primary text-center font-bold">O Que você vai Receber</h5>
-		<div class=" grid font-light w-fit mx-auto mt-10 grid-cols-2 gap-12  justify-center items-center place-items-center place-content-center place-self-center justify-items-center ">
-			<div class=" w-[500px] h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
+		<div class=" flex flex-col px-4 sm:px-0 sm:grid sm:w-fit mx-auto mt-10 grid-cols-2 gap-4  justify-center items-center place-items-center place-content-center place-self-center justify-items-center ">
+			<div class=" sm:w-[500px]  w-full  h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
 				<p class=" text-2xl">Acesso exclusivo a fornecedores confiáveis.</p>
-				<div class=" size-16 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-5">
+				<div class=" sm:size-16 size-12 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-2">
 					<span>1</span>
 				</div>
 			</div>
-			<div class=" w-[500px] h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
+			<div class=" sm:w-[500px]  w-full  h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
 				<p class=" text-2xl">Método testado que vai te ensinar a economizar dinheiro.</p>
-				<div class=" size-16 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-5">
+				<div class=" sm:size-16 size-12 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-2">
 					<span>2</span>
 				</div>
 			</div>
-			<div class=" w-[500px] h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
+			<div class=" sm:w-[500px]  w-full  h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
 				<p class=" text-2xl">Guia prático para importar sem intermediários.</p>
-				<div class=" size-16 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-5">
+				<div class=" sm:size-16 size-12 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-2">
 					<span>3</span>
 				</div>
 			</div>
-			<div class=" w-[500px] h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
+			<div class=" sm:w-[500px]  w-full  h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
 				<p class=" text-2xl">Suporte completo para a sua primeira importação.</p>
-				<div class=" size-16 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-5">
+				<div class=" sm:size-16 size-12 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-2">
 					<span>4</span>
 				</div>
 			</div>
@@ -235,8 +255,8 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-
-	<img class=" my-32 mx-auto w-56 h-auto" src="/logo.png" alt="">
+		
+	<img class=" my-20 sm:my-32 mx-auto sm:w-56 w-40 h-auto" src="/logo.png" alt="">
 
 
 </Layout>
@@ -254,7 +274,7 @@ import Layout from '../layouts/Layout.astro';
 	bottom: 0px;
 	left: 50%;
 	transform: translateX(-50%);
-	color: aliceblue; 
+	color: aliceblue;
 	background-color: #ffc20b;
 	z-index: -1;
 }
@@ -268,7 +288,7 @@ import Layout from '../layouts/Layout.astro';
 	bottom: 0px;
 	left: 50%;
 	transform: translateX(-50%);
-	color: aliceblue; 
+	color: aliceblue;
 	background-color: #ff0b0b;
 	z-index: -1;
 }

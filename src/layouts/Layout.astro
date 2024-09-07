@@ -24,45 +24,86 @@ const { title } = Astro.props;
 
 
 <style>
-
-body {
-  background-image: 
-   	url('/miniphone1.png'),
-	url('/miniphone2.png'),
-	url('/miniphone3.png'),
-	url('/shape2.svg'),
-	url('/shape3.svg'),
-	url('/shape4.svg'),
-	url('/shape5.svg'),
-	url('/shape6.svg'),
-	url('/shape7.svg'),
-	url('/shape10.svg');  
-
-  background-position: 
-  	80px 80px,   63% 420px,  90% 520px,
-   0px 0px,
-   100% 0px,
-   0px 340px,
-   0px 450px,
-   120% 700px,
-   30% 1100px,
-   0% 2200px;
+	/* Estilos generales */
+	body {
+		background-image: 
+		  url('/miniphone1.png'),
+		  url('/miniphone2.png'),
+		  url('/miniphone3.png'),
+		  url('/shape2.svg'),
+		  url('/shape3.svg'),
+		  url('/shape4.svg'),
+		  url('/shape5.svg'),
+		  url('/shape7.svg'),
+		  url('/shape7.svg'),
+		  url('/shape10.svg');
+		
+		background-position: 
+		  10px 80px,   
+		  90% 120px,  
+		  100% 320px,
+		  0px 0px,
+		  100% 0px,
+		  0px 340px,
+		  0px 450px,
+		  120% 700px,
+		  30% 1100px,
+		  0% 2200px;
+		
+		background-repeat: no-repeat;
   
-  background-repeat: no-repeat;
+		background-size: 
+		  90px 90px,   /* Tamaño para miniphone1 */
+		  90px 90px,   /* Tamaño para miniphone2 */
+		  50px 50px,   /* Tamaño para miniphone3 */
+		  auto,          /* Tamaño original para shape2 */
+		  auto,          /* Tamaño original para shape3 */
+		  auto,          /* Tamaño original para shape4 */
+		  auto,          /* Tamaño original para shape5 */
+		  auto,          /* Tamaño original para shape6 */
+		  auto,          /* Tamaño original para shape7 */
+		  auto;          /* Tamaño original para shape10 */
+	  }
 
-  background-size: 
-    100px 100px,   /* Tamaño para miniphone1 */
-    130px 130px,   /* Tamaño para miniphone2 */
-    100px 100px,   /* Tamaño para miniphone3 */
-    auto,          /* Tamaño original para shape2 */
-    auto,          /* Tamaño original para shape3 */
-    auto,          /* Tamaño original para shape4 */
-    auto,          /* Tamaño original para shape5 */
-    auto,          /* Tamaño original para shape6 */
-    auto,          /* Tamaño original para shape7 */
-    auto;          /* Tamaño original para shape10 */
-
-}
-
-
-</style>
+	/* Estilos para pantallas grandes (escritorios) */
+	@media (min-width: 1024px) {
+	  body {
+		background-image: 
+		  url('/miniphone1.png'),
+		  url('/miniphone2.png'),
+		  url('/miniphone3.png'),
+		  url('/shape2.svg'),
+		  url('/shape3.svg'),
+		  url('/shape4.svg'),
+		  url('/shape5.svg'),
+		  url('/shape6.svg'),
+		  url('/shape7.svg'),
+		  url('/shape10.svg');
+		
+		background-position: 
+		  80px 80px,   63% 420px,  90% 520px,
+		  0px 0px,
+		  100% 0px,
+		  0px 340px,
+		  0px 450px,
+		  120% 700px,
+		  30% 1100px,
+		  0% 2200px;
+		
+		background-repeat: no-repeat;
+  
+		background-size: 
+		  100px 100px,   /* Tamaño para miniphone1 */
+		  130px 130px,   /* Tamaño para miniphone2 */
+		  100px 100px,   /* Tamaño para miniphone3 */
+		  auto,          /* Tamaño original para shape2 */
+		  auto,          /* Tamaño original para shape3 */
+		  auto,          /* Tamaño original para shape4 */
+		  auto,          /* Tamaño original para shape5 */
+		  auto,          /* Tamaño original para shape6 */
+		  auto,          /* Tamaño original para shape7 */
+		  auto;          /* Tamaño original para shape10 */
+	  }
+	}
+  </style>
+  
