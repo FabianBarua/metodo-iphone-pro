@@ -1,0 +1,74 @@
+<div class=" mt-4 flex gap-2  mx-auto w-min">
+    <div class="  bg-[#181200] size-[5.5rem] pt-1 rounded-2xl flex flex-col justify-center items-center">
+        <h6
+            id="days"
+            class=" text-4xl font-bold leading-9 tracking-tighter"
+        >00</h6>
+        <p class=" font-bold text-xl" >
+            dias
+        </p>
+    </div>
+    <div class="  bg-[#181200] size-[5.5rem] pt-1 rounded-2xl flex flex-col justify-center items-center">
+        <h6
+            id="hours"
+            class=" text-4xl font-bold leading-9 tracking-tighter"
+        >00</h6>
+        <p class=" font-bold text-xl" >
+            hrs
+        </p>
+    </div>
+    <div class="  bg-[#181200] size-[5.5rem] pt-1 rounded-2xl flex flex-col justify-center items-center">
+        <h6
+            id="minutes"
+            class=" text-4xl font-bold leading-9 tracking-tighter"
+        >00</h6>
+        <p class=" font-bold text-xl" >
+            min
+        </p>
+    </div>
+    <div class="  bg-[#181200] size-[5.5rem] pt-1 rounded-2xl flex flex-col justify-center items-center">
+        <h6
+            id="seconds"
+            class=" text-4xl font-bold leading-9 tracking-tighter"
+        >00</h6>
+        <p class=" font-bold text-xl" >
+            seg
+        </p>
+    </div>
+    
+</div>
+
+
+<script>
+
+    const dateFinal = new Date('2024-09-09 23:59:59').getTime();
+    const days = document.getElementById('days');
+    const hours = document.getElementById('hours');
+    const minutes = document.getElementById('minutes');
+    const seconds = document.getElementById('seconds');
+
+    const init = ()=>{
+
+        const dateNow = new Date().getTime();
+        const timeLeft = dateFinal - dateNow;
+
+        const day = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hour = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minute = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const second = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        if (!days || !hours || !minutes || !seconds) return;
+
+        days.innerHTML = day < 10 ? `0${day}` : day.toString();
+        hours.innerHTML = hour < 10 ? `0${hour}` : hour.toString();
+        minutes.innerHTML = minute < 10 ? `0${minute}` : minute.toString();
+        seconds.innerHTML = second < 10 ? `0${second}` : second.toString();
+
+
+
+    }
+
+    setInterval(init, 1000);
+
+
+</script>

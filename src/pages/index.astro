@@ -1,4 +1,5 @@
 ---
+import Clock from '../components/Clock.astro';
 import LinkGaranta from '../components/LinkGaranta.astro';
 import Shape from '../components/Shape.astro';
 import Layout from '../layouts/Layout.astro';
@@ -42,7 +43,7 @@ import Layout from '../layouts/Layout.astro';
 		<img src="/iphone1.png" class=" w-[500px] -translate-y-24 opacity-40" alt="">
 	</div>
 
-	<section class=" flex w-full justify-between  z-20 relative ">
+	<section class=" flex w-full justify-between  z-20 relative overflow-hidden py-5 ">
 		<div class=" max-w-[850px]  pl-24  pr-24 py-16 rounded-r-[50px] bg-[#181200]  relative">
 			<h2 class=" text-2xl font-bold">
 				Chega de pagar caro em iPhones! 
@@ -56,12 +57,12 @@ import Layout from '../layouts/Layout.astro';
 				<LinkGaranta />
 			</div>
 		</div>
-		<div class="   flex-1  justify-center items-center flex relative">
+		<div class="   flex-1  justify-center items-center flex relative ">
 
 			<div class=" relative">
-				<img src="/arrow2.png" alt="" class="absolute -top-10 -right-32 size-32 object-contain">
-				<!-- <img src="/arrow3.png" alt="" class="absolute -bottom-32 -left-8 size-72 object-contain">
-				<img src="/arrow4.png" alt="" class="absolute -bottom-32 -left-8 size-72 object-contain"> -->
+				<img src="/arrow2.png" alt="" class="absolute -top-20 -right-32 size-32 object-contain">
+				 <img src="/arrow3.png" alt="" class="absolute -bottom-44 -left-72  size-72 object-contain">
+				<img src="/arrow4.png" alt="" class="absolute -bottom-20 -right-36 size-28 object-contain"> 
 	
 				<img src="/alliphones.png" class=" w-72 " alt="">
 			</div>
@@ -182,6 +183,61 @@ import Layout from '../layouts/Layout.astro';
 			</p>
 		</div>
 	</section>
+
+
+	<section class=" w-full flex  justify-around mt-64 relative">
+
+		<img src="/3arrows.png" alt="" class=" -translate-y-12">
+		<img src="/2iphones.png" alt="" class="  w-40   absolute top-[30%] -translate-y-1/2 left-0">
+
+		<div class=" bg-gradient-to-t from-transparent justify-center to-[#181200] rounded-[50px] h-min px-3">
+			<div class=" h-32 flex items-end ">
+				<img src="/book.png" class=" w-[28rem] translate-y-[5.5rem]" alt="">
+			</div>
+			<LinkGaranta />
+			<Clock />
+			<p class=" mt-8 text-primary font-bold text-center text-2xl">Oferta limitada</p>
+		</div>
+
+		<img src="/3arrows-2.png" class=" -translate-y-36" alt="">
+		<img src="/2iphones-2.png" alt="" class="top-[30%]  w-40 absolute -translate-y-1/2  right-0">
+
+	</section>
+
+	<section>
+		<h5 class=" text-3xl underline text-primary text-center font-bold">O Que você vai Receber</h5>
+		<div class=" grid font-light w-fit mx-auto mt-10 grid-cols-2 gap-12  justify-center items-center place-items-center place-content-center place-self-center justify-items-center ">
+			<div class=" w-[500px] h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
+				<p class=" text-2xl">Acesso exclusivo a fornecedores confiáveis.</p>
+				<div class=" size-16 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-5">
+					<span>1</span>
+				</div>
+			</div>
+			<div class=" w-[500px] h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
+				<p class=" text-2xl">Método testado que vai te ensinar a economizar dinheiro.</p>
+				<div class=" size-16 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-5">
+					<span>2</span>
+				</div>
+			</div>
+			<div class=" w-[500px] h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
+				<p class=" text-2xl">Guia prático para importar sem intermediários.</p>
+				<div class=" size-16 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-5">
+					<span>3</span>
+				</div>
+			</div>
+			<div class=" w-[500px] h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
+				<p class=" text-2xl">Suporte completo para a sua primeira importação.</p>
+				<div class=" size-16 flex justify-center items-center text-4xl font-bold rounded-3xl bg-primary  text-black  absolute -bottom-5 -right-5">
+					<span>4</span>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<img class=" my-32 mx-auto w-56 h-auto" src="/logo.png" alt="">
+
 
 </Layout>
 
