@@ -16,6 +16,18 @@ export const Photos = () => {
         {
             id: 'cap3',
             url: '/cap3.jpeg'
+        },
+        {
+            id: 'cap4',
+            url: '/cap4.jpeg'
+        },
+        {
+            id: 'cap5',
+            url: '/cap5.jpeg'
+        },
+        {
+            id: 'cap6',
+            url: '/cap6.jpeg'
         }
     ]
 
