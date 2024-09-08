@@ -2,7 +2,7 @@
 import Clock from '../components/Clock.astro';
 import LinkGaranta from '../components/LinkGaranta.astro';
 import Layout from '../layouts/Layout.astro';
-
+import { Photos } from '../components/Photos';
 ---
 
 <Layout title="Metodo Iphone Pro">
@@ -148,15 +148,8 @@ import Layout from '../layouts/Layout.astro';
 			e aumentar seus lucros.
 		</p>
 
-		<div class=" flex flex-col px-4 sm:px-0 sm:grid sm:w-fit mx-auto mt-10 grid-cols-2 gap-4  justify-center items-center place-items-center place-content-center place-self-center justify-items-center ">
-			<div class=" w-full sm:w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
-			</div>
-			<div class=" w-full sm:w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
-			</div>
-			<div class=" w-full sm:w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
-			</div>
-			<div class=" w-full sm:w-96 h-32 rounded-3xl  border-primary border  bg-[#181200] ">
-			</div>
+		<div class="  flex flex-wrap justify-center gap-4 mt-8 ">
+			<Photos  client:only />
 		</div>
 
 	</section>
