@@ -142,7 +142,6 @@ import LiteYoutube from '../components/LiteYoutube.astro';
 
 
 	<section class=" mt-20">
-		<h4 class=" text-center text-2xl">Provas Sociais</h4>
 		<p class=" text-center text-xl mt-2 leading-5 " >
 			Aqui estão os depoimentos de pessoas que seguiram o  <br class=" sm:block hidden">
 			Método iPhone Pro e conseguiram economizar <br class=" sm:block hidden">
@@ -204,11 +203,19 @@ import LiteYoutube from '../components/LiteYoutube.astro';
 
 		<div class=" bg-gradient-to-t from-transparent justify-center to-[#181200] rounded-[50px] h-min px-3">
 			<div class=" h-32 flex items-end ">
-				<img src="/book.png" class=" w-80 mx-auto sm:w-[28rem] translate-y-[5.5rem]" alt="">
+				<img src="/book.png" class=" w-80 mx-auto sm:w-[28rem] -translate-x-4 translate-y-[5.5rem]" alt="">
 			</div>
-			<LinkGaranta />
+
+			<p class=" mt-12 text-center text-2xl text-primary">
+				de 497,00 por
+			</p>
+			<h3 class=" text-center  text-3xl ">
+				R$ <span class=" text-9xl text-white font-bold">147</span>,00
+			</h3>
+
+			<LinkGaranta margin="10px"  />
 			<Clock />
-			<p class=" mt-8 text-primary font-bold text-center text-2xl">Oferta limitada</p>
+			<p class=" mt-4 text-primary font-bold text-center text-2xl">Oferta limitada</p>
 		</div>
 
 		<img src="/3arrows-2.png" class=" sm:block hidden -translate-y-36" alt="">
@@ -217,8 +224,8 @@ import LiteYoutube from '../components/LiteYoutube.astro';
 	</section>
 
 
-	<section class=" mt-20 sm:mt-0">
-		<h5 class=" text-3xl underline text-primary text-center font-bold">O Que você vai Receber</h5>
+	<section class=" mt-40 sm:mt-0">
+		<h5 class=" text-3xl underline text-primary text-center font-bold mt-20">O Que você vai Receber</h5>
 		<div class=" flex flex-col px-4 sm:px-0 sm:grid sm:w-fit mx-auto mt-10 grid-cols-2 gap-4  justify-center items-center place-items-center place-content-center place-self-center justify-items-center ">
 			<div class=" sm:w-[500px]  w-full  h-32 rounded-3xl  border-primary border  bg-[#181200] relative  justify-center items-center flex px-10 ">
 				<p class=" text-2xl">Acesso exclusivo a fornecedores confiáveis.</p>
