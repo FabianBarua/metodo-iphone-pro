@@ -33,7 +33,7 @@ export const Photos = () => {
 
     return (
         <PhotoProvider>
-            {images.map((item, index) => (
+            {images.map((item) => (
                 <PhotoView key={item.id} src={item.url}>
                     <img className=' w-40 overflow-hidden aspect-square sm:aspect-auto object-cover sm:h-auto sm:w-40 rounded-xl' src={item.url} alt="" />
                 </PhotoView>
