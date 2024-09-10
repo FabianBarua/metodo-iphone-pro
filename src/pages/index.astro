@@ -54,7 +54,7 @@ import LiteYoutube from '../components/LiteYoutube.astro';
 				Eu investi tempo e dinheiro para aprender esse processo e agora, vou te ensinar a importar iPhones de maneira simples e econômica.
 			</p>
 
-			<div class=" absolute -bottom-5 left-[calc(50%+6rem)] -translate-x-[calc(50%+6rem)]">
+			<div class=" sm:block hidden absolute -bottom-5 left-[calc(50%+6rem)] -translate-x-[calc(50%+6rem)]">
 				<LinkGaranta />
 			</div>
 		</div>
@@ -76,6 +76,10 @@ import LiteYoutube from '../components/LiteYoutube.astro';
 
 		<div class="  sm:w-[429px]" >
 			<img src="/iphone2.png" alt="" class=" w-[90%]">
+			
+			<div class=" sm:hidden block">
+				<LinkGaranta />
+			</div>
 			<p class=" text-[18px] leading-6 mt-5">
 				Neste vídeo, eu conto a história de como entrei nesse mercado e por que decidi compartilhar esse conhecimento com você.
 				<br> <br>
@@ -207,7 +211,7 @@ import LiteYoutube from '../components/LiteYoutube.astro';
 			</div>
 
 			<p class=" mt-12 text-center text-2xl text-primary">
-				de 497,00 por
+				de <s>497,00</s> por
 			</p>
 			<h3 class=" text-center  text-3xl ">
 				R$ <span class=" text-9xl text-white font-bold">147</span>,00
